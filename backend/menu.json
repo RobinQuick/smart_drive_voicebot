@@ -1,0 +1,989 @@
+{
+  "categories": [
+    {
+      "id": "menus",
+      "name": "Menus",
+      "source": "https://www.quick.fr/produits/menu"
+    },
+    {
+      "id": "kids",
+      "name": "Menus Enfants",
+      "source": "https://www.quick.fr/produits/menus-enfants"
+    },
+    {
+      "id": "burgers",
+      "name": "Burgers",
+      "source": "https://www.quick.fr/produits/burgers"
+    },
+    {
+      "id": "salads",
+      "name": "Salades",
+      "source": "https://www.quick.fr/produits/salades"
+    },
+    {
+      "id": "fries",
+      "name": "Frites",
+      "source": "https://www.quick.fr/produits/frites"
+    },
+    {
+      "id": "finger",
+      "name": "Finger food",
+      "source": "https://www.quick.fr/produits/finger-food"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "source": "https://www.quick.fr/produits/desserts"
+    },
+    {
+      "id": "cold_drinks",
+      "name": "Boissons Froides",
+      "source": "https://www.quick.fr/produits/boissons-froides"
+    },
+    {
+      "id": "hot_drinks",
+      "name": "Boissons Chaudes",
+      "source": "https://www.quick.fr/produits/boissons-chaudes"
+    }
+  ],
+  "items": [
+    {
+      "name": "Giant Menu",
+      "category": "menus",
+      "sku": "GIANT_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Long Bacon Menu (Bacon de Poulet)",
+      "category": "menus",
+      "sku": "LONG_BACON_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Méga Giant Menu",
+      "category": "menus",
+      "sku": "MEGA_GIANT_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Giant Max Menu",
+      "category": "menus",
+      "sku": "GIANT_MAX_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Menu Kids",
+      "category": "kids",
+      "sku": "KIDS_MENU",
+      "options": {
+        "toy": {
+          "type": "bool",
+          "default": true
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Eau",
+            "Jus d'orange",
+            "Coca-Cola"
+          ],
+          "default": "Eau"
+        },
+        "side": {
+          "type": "enum",
+          "values": [
+            "Frites",
+            "Petite salade"
+          ],
+          "default": "Frites"
+        }
+      }
+    },
+    {
+      "name": "Giant",
+      "category": "burgers",
+      "sku": "GIANT"
+    },
+    {
+      "name": "Méga Giant",
+      "category": "burgers",
+      "sku": "MEGA_GIANT"
+    },
+    {
+      "name": "Giant Max",
+      "category": "burgers",
+      "sku": "GIANT_MAX"
+    },
+    {
+      "name": "Long Bacon (Bacon de Poulet)",
+      "category": "burgers",
+      "sku": "LONG_BACON"
+    },
+    {
+      "name": "Long Chicken",
+      "category": "burgers",
+      "sku": "LONG_CHICKEN"
+    },
+    {
+      "name": "Long Fish",
+      "category": "burgers",
+      "sku": "LONG_FISH"
+    },
+    {
+      "name": "Long Spicy",
+      "category": "burgers",
+      "sku": "LONG_SPICY"
+    },
+    {
+      "name": "Quick'N Toast (Bacon de Poulet)",
+      "category": "burgers",
+      "sku": "QUICK_N_TOAST_BACON"
+    },
+    {
+      "name": "Suprême Classiq",
+      "category": "burgers",
+      "sku": "SUPREME_CLASSIQ"
+    },
+    {
+      "name": "Suprême Bacon (Bacon de Poulet)",
+      "category": "burgers",
+      "sku": "SUPREME_BACON"
+    },
+    {
+      "name": "ClassiQ Crispy Onions Beef",
+      "category": "burgers",
+      "sku": "CLASSIQ_CRISPY_ONIONS_BEEF"
+    },
+    {
+      "name": "ClassiQ Crispy Onions Chicken",
+      "category": "burgers",
+      "sku": "CLASSIQ_CRISPY_ONIONS_CHICKEN"
+    },
+    {
+      "name": "Wrap Giant Veggie",
+      "category": "burgers",
+      "sku": "WRAP_GIANT_VEGGIE"
+    },
+    {
+      "name": "Salade Poulet",
+      "category": "salads",
+      "sku": "SALAD_CHICKEN"
+    },
+    {
+      "name": "Frites Medium",
+      "category": "fries",
+      "sku": "FRIES_M"
+    },
+    {
+      "name": "Frites Large",
+      "category": "fries",
+      "sku": "FRIES_L"
+    },
+    {
+      "name": "x7 Chicken Dips",
+      "category": "finger",
+      "sku": "CHICKEN_DIPS_7"
+    },
+    {
+      "name": "x5 Chicken Wings",
+      "category": "finger",
+      "sku": "CHICKEN_WINGS_5"
+    },
+    {
+      "name": "Bâtonnets de fromage (4)",
+      "category": "finger",
+      "sku": "CHEESE_STICKS_4"
+    },
+    {
+      "name": "Sundae",
+      "category": "desserts",
+      "sku": "SUNDAE"
+    },
+    {
+      "name": "Brownie",
+      "category": "desserts",
+      "sku": "BROWNIE"
+    },
+    {
+      "name": "Coca-Cola Medium",
+      "category": "cold_drinks",
+      "sku": "COKE_M"
+    },
+    {
+      "name": "Eau",
+      "category": "cold_drinks",
+      "sku": "WATER"
+    },
+    {
+      "name": "Fanta",
+      "category": "cold_drinks",
+      "sku": "FANTA"
+    },
+    {
+      "name": "Café",
+      "category": "hot_drinks",
+      "sku": "COFFEE"
+    },
+    {
+      "name": "ClassiQ Crispy Onions Beef Menu",
+      "category": "menus",
+      "sku": "CLASSIQ_CRISPY_ONIONS_BEEF_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "ClassiQ Crispy Onions Chicken Menu",
+      "category": "menus",
+      "sku": "CLASSIQ_CRISPY_ONIONS_CHICKEN_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Formule Salades Qréatives Menu",
+      "category": "menus",
+      "sku": "FORMULE_SALADES_QREATIVES_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Long Bacon (Bacon de Poulet) Menu",
+      "category": "menus",
+      "sku": "LONG_BACON_BACON_DE_POULET_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Long Chicken Menu",
+      "category": "menus",
+      "sku": "LONG_CHICKEN_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Long Fish Menu",
+      "category": "menus",
+      "sku": "LONG_FISH_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Long Spicy Menu",
+      "category": "menus",
+      "sku": "LONG_SPICY_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Menu Junior Giant",
+      "category": "menus",
+      "sku": "MENU_JUNIOR_GIANT",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Poulet Hot Pepper Menu",
+      "category": "menus",
+      "sku": "POULET_HOT_PEPPER_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Poulet Hot Pepper'N Qrispy Cheese Menu",
+      "category": "menus",
+      "sku": "POULET_HOT_PEPPERN_QRISPY_CHEESE_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Quick'N Toast (Bacon de Poulet) Menu",
+      "category": "menus",
+      "sku": "QUICKN_TOAST_BACON_DE_POULET_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Suprême Bacon (Bacon de Poulet) Menu",
+      "category": "menus",
+      "sku": "SUPREME_BACON_BACON_DE_POULET_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Suprême Classiq Menu",
+      "category": "menus",
+      "sku": "SUPREME_CLASSIQ_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Wrap Giant Veggie Menu",
+      "category": "menus",
+      "sku": "WRAP_GIANT_VEGGIE_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "x5 Chicken Wings Menu",
+      "category": "menus",
+      "sku": "X5_CHICKEN_WINGS_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "x7 Chicken Dips Menu",
+      "category": "menus",
+      "sku": "X7_CHICKEN_DIPS_MENU",
+      "options": {
+        "size": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L",
+            "XL"
+          ],
+          "default": "M"
+        },
+        "drink": {
+          "type": "enum",
+          "values": [
+            "Coca-Cola",
+            "Fanta",
+            "Sprite",
+            "Eau"
+          ],
+          "default": "Coca-Cola"
+        },
+        "fries": {
+          "type": "enum",
+          "values": [
+            "M",
+            "L"
+          ],
+          "default": "M"
+        }
+      }
+    },
+    {
+      "name": "Junior Giant",
+      "category": "burgers",
+      "sku": "JUNIOR_GIANT"
+    },
+    {
+      "name": "Poulet Hot Pepper",
+      "category": "burgers",
+      "sku": "POULET_HOT_PEPPER"
+    },
+    {
+      "name": "Poulet Hot Pepper'N Qrispy Cheese",
+      "category": "burgers",
+      "sku": "POULET_HOT_PEPPER_N_QRISPY_CHEESE"
+    },
+    {
+      "name": "Petite Salade",
+      "category": "salads",
+      "sku": "PETITE_SALADE"
+    },
+    {
+      "name": "Salade Qréative Chicken",
+      "category": "salads",
+      "sku": "SALADE_QR_ATIVE_CHICKEN"
+    },
+    {
+      "name": "Salade Qréative Veggie",
+      "category": "salads",
+      "sku": "SALADE_QR_ATIVE_VEGGIE"
+    },
+    {
+      "name": "x20 Chicken Dips",
+      "category": "finger",
+      "sku": "X20_CHICKEN_DIPS"
+    },
+    {
+      "name": "x4 Chicken Dips",
+      "category": "finger",
+      "sku": "X4_CHICKEN_DIPS"
+    },
+    {
+      "name": "Coca-Cola 20cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_20CL"
+    },
+    {
+      "name": "Coca-Cola 35cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_35CL"
+    },
+    {
+      "name": "Coca-Cola 50cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_50CL"
+    },
+    {
+      "name": "Coca-Cola Cherry Zéro Sucres 20cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_CHERRY_Z_RO_SUCRES_20CL"
+    },
+    {
+      "name": "Coca-Cola Cherry Zéro Sucres 35cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_CHERRY_Z_RO_SUCRES_35CL"
+    },
+    {
+      "name": "Coca-Cola Cherry Zéro Sucres 50cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_CHERRY_Z_RO_SUCRES_50CL"
+    },
+    {
+      "name": "Coca-Cola Sans Sucres 20cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_SANS_SUCRES_20CL"
+    },
+    {
+      "name": "Coca-Cola Sans Sucres 35cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_SANS_SUCRES_35CL"
+    },
+    {
+      "name": "Coca-Cola Sans Sucres 50cl",
+      "category": "cold_drinks",
+      "sku": "COCA_COLA_SANS_SUCRES_50CL"
+    },
+    {
+      "name": "Fanta 20cl",
+      "category": "cold_drinks",
+      "sku": "FANTA_20CL"
+    },
+    {
+      "name": "Fanta 35cl",
+      "category": "cold_drinks",
+      "sku": "FANTA_35CL"
+    },
+    {
+      "name": "Fanta 50cl",
+      "category": "cold_drinks",
+      "sku": "FANTA_50CL"
+    },
+    {
+      "name": "Café Long",
+      "category": "hot_drinks",
+      "sku": "CAF_LONG"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Drive Voice Bot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: blob: https://api.openai.com http://127.0.0.1:8787 http://localhost:8787 https://stun.l.google.com; connect-src *; media-src *;">
+</head>
+<body>
+<main>
+  <h1>Smart Drive Voice Bot <span class="badge">Drive FR</span></h1>
+
+  <div class="row">
+    <label for="backendUrl">Backend URL :</label>
+    <input id="backendUrl" placeholder="http://127.0.0.1:8787" style="min-width:280px;">
+    <button id="saveBackend">Save</button>
+    <button id="connectBtn">Connect</button>
+    <button id="startBtn" disabled>Start Talking</button>
+  </div>
+
+  <div class="cols">
+    <div class="col" style="max-width:620px;">
+      <div class="card">
+        <h3 style="margin:0 0 8px;">Commande</h3>
+        <div id="orderPanel">
+          <div id="orderSummary" class="summary"></div>
+          <table id="orderTable">
+            <thead>
+              <tr><th style="text-align:left;">Produit</th><th style="text-align:right;">Qte</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <div id="orderRecap" class="recap"></div>
+          <div id="orderNotes" style="margin-top:8px;" class="muted"></div>
+          <div id="kdsResult" style="margin-top:8px; color:#22c55e;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <h3 style="margin:0 0 8px;">Journal</h3>
+        <div id="log"></div>
+        <div class="muted" style="margin-top:8px;">Transcription</div>
+        <div id="transcript" class="transcript"></div>
+        <div class="controls" style="margin-top:12px;">
+          <input id="nluText" placeholder="Saisir une phrase (ex: 'Un Giant Menu sans oignons')" style="flex:1; min-width:260px;"/>
+          <button id="nluSend" class="primary">Analyser</button>
+          <label class="switch"><input type="checkbox" id="muteToggle" checked/> Mute agent quand je parle</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remote audio -->
+  <audio id="remote" autoplay hidden></audio>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

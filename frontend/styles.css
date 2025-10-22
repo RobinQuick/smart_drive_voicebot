@@ -1,0 +1,52 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #121826;
+  --muted: #9aa4b2;
+  --text: #e6edf3;
+  --accent: #4f8cff;
+  --accent-2: #22c55e;
+  --border: #1f2937;
+}
+
+html, body { height:100%; }
+body {
+  margin: 0;
+  padding: 24px;
+  background: radial-gradient(1200px 600px at 10% -10%, #12203a 0%, #0b0e14 60%) no-repeat,
+              linear-gradient(180deg, #0b0e14, #0b0e14);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+}
+
+h1 { margin: 0 0 12px; font-size: 1.4rem; font-weight: 600; }
+
+.row { display:flex; gap:8px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+.row input { width: 340px; padding: .55rem .7rem; border-radius: 8px; border: 1px solid var(--border); background: #0f1424; color: var(--text); }
+
+button { padding: .6rem 1rem; border-radius: 8px; border: 1px solid var(--border); background: #10182b; color: var(--text); cursor:pointer; }
+button:hover { background: #14203a; }
+button.primary { background: #1b2a4a; border-color: #243b67; }
+button.primary:hover { background: #21345c; }
+
+.cols { display:flex; gap:16px; align-items:flex-start; margin-top:12px; }
+.col { flex:1; min-width:320px; }
+
+.card { background: var(--panel); border:1px solid var(--border); border-radius: 12px; padding:12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+
+#log { height:300px; overflow:auto; border-radius: 8px; background:#0f1526; border:1px dashed #223; padding:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color:#d0d6e0; }
+
+table { width:100%; border-collapse:collapse; }
+th, td { border-bottom:1px solid #1d263a; padding:8px 6px; }
+thead th { font-weight:600; color:#c9d4e3; }
+tbody td { color:#e6edf3; }
+.line-name { font-size:1.02rem; font-weight:600; }
+.qty-pill { display:inline-block; min-width:32px; text-align:center; padding:4px 8px; border-radius:999px; background:#0f2345; color:#9fc1ff; font-weight:700; }
+
+.muted { color: var(--muted); }
+.transcript { min-height: 48px; white-space: pre-wrap; color: #c9d4e3; background:#0f1526; border:1px dashed #223; border-radius:8px; padding:8px; }
+.summary { margin:8px 0; font-weight:700; font-size:1.05rem; }
+.recap { margin-top:6px; color:#c9d4e3; }
+.controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.switch { display:inline-flex; gap:8px; align-items:center; }
+
+.badge { display:inline-block; padding:2px 6px; border-radius:6px; background:#10223e; color:#9fc1ff; font-size:.75rem; }
