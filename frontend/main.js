@@ -2,7 +2,8 @@
 console.log("[boot] main.js v1.3 loaded");
 
 // ---------- State ----------
-let BACKEND = localStorage.getItem('backendUrl') || 'http://127.0.0.1:8787';
+// Default to Netlify proxied path "/api". You can override in UI.
+let BACKEND = localStorage.getItem('backendUrl') || '/api';
 let token = null;
 let pc = null;
 let localStream = null;
